@@ -33,6 +33,7 @@ gem 'devise'
 gem 'bootstrap', '~> 4.0.0.beta'
 gem 'countries'
 gem 'geocoder'
+gem 'money-rails', '~>1'
 gem 'stripe'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
