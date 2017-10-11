@@ -41,10 +41,10 @@
 
   <p>
     <strong>Night fee:</strong>
-    <%= humanized_money_with_symbol @listing.night_fee %>
+    <%= format_cents @listing.night_fee_cents %>
   |
     <strong>Cleaning fee:</strong>
-    <%= humanized_money_with_symbol @listing.cleaning_fee %>
+    <%= format_cents @listing.cleaning_fee_cents %>
   </p>
   </div>
 </div>
