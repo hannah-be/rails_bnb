@@ -2,13 +2,13 @@
 
 <h1>Listings</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
       <th>Street address</th>
       <th>City</th>
-      <th>Country code</th>
+      <th>Country</th>
       <th>Bed count</th>
       <th>Bedroom count</th>
       <th>Bathroom count</th>
@@ -25,7 +25,7 @@
         <td><%= listing.title %></td>
         <td><%= listing.street_address %></td>
         <td><%= listing.city %></td>
-        <td><%= listing.country_code %></td>
+        <td><%= listing.country.name %></td>
         <td><%= listing.bed_count %></td>
         <td><%= listing.bedroom_count %></td>
         <td><%= listing.bathroom_count %></td>
