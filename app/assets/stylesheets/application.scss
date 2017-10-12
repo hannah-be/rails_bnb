@@ -3009,9 +3009,10 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
-  margin-bottom: 0;
+  margin: 2px;
   font-weight: normal;
   text-align: center;
+  color: #fff;
   vertical-align: middle;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
