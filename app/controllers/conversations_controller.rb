@@ -7,8 +7,8 @@ class ConversationsController < ApplicationController
   end
 
   def create
-    if Conversation.between(params[:host],params[:guest]).present?
-      @conversation = Conversation.between(params[:host], params[:guest]).first
+    if Conversation.between(params[:host_id],params[:guest_id]).present?
+      @conversation = Conversation.between(params[:host_id], params[:guest_id]).first
     else
       @conversation = Conversation.create!(conversation_params)
     end
@@ -17,7 +17,7 @@ class ConversationsController < ApplicationController
 
   private
     def conversation_params
-      params.permit(:host, :guest)
+      params.permit(:host_id, :guest_id)
     end
 
 

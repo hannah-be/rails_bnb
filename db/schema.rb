@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20171012040035) do
 
   create_table "conversations", force: :cascade do |t|
     t.bigint "listing_id"
-    t.integer "host"
-    t.integer "guest"
+    t.integer "host_id"
+    t.integer "guest_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["listing_id"], name: "index_conversations_on_listing_id"
